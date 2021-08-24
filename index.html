@@ -22,8 +22,8 @@
                         <div class="form-mid">
                             <form action="javascript:sendmail()" method="post">
                                 <div class="field">
-                                    <input type="text" class="form-control" name="Name" id="Name"
-                                        placeholder="Your Name" required="">
+                                    <input type="text" class="form-control" name="Name" id="Name" placeholder="Your Name"
+                                        required="">
                                 </div>
                                 <div class="field">
                                     <input type="email" class="form-control" name="Sender" id="Sender"
@@ -67,9 +67,7 @@
                 //console.log(name, phone, email, message);
 
                 Email.send({
-                    Host: "smtp.elasticemail.com",
-                    Username: "dashdishant1997@gmail.com",
-                    Password: "6F061317625BE339E1702B08B29EB53B6262",
+                    SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
                     To: 'dashdishant1997@gmail.com',
                     From: "rogerghostweb1997@gmail.com",
                     Subject: "New message on contact from " + name,
